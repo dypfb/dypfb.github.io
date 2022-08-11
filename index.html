@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <div id="main">Hello World!</div>
-  <button onClick="addToCartPixelFire()">Trigger add to cart</button>
-  <script src="pixel.js">
-    function addToCartPixelFire() {
-      var value = Math.floor(Math.random() * Math.floor(100));
-      fbq('track', 'AddToCart', {currency: "USD", value: value});
-    }
-  </script>
+<div id="main">Hello World!</div>
+<button onClick="addToCartPixelFire()">Trigger add to cart</button>
+<script src="pixel.js"></script>
+<script>
+  function addToCartPixelFire() {
+    var value = Math.floor(Math.random() * Math.floor(100));
+    fbq('track', 'AddToCart', { currency: "USD", value: value });
+  }
+</script>
+
 </html>
